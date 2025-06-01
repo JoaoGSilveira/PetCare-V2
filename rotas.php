@@ -30,9 +30,13 @@
 	
 	//Rotas
 	$route = new Rotas();
+
+	
 	
 	$route->get("/", [produtoController::class,"listar_produtos"]);
-	//$route->get("/inserir", [RevisaoController::class,"cadastrar_carro"]);
+	$route->get("/SobreNos", [inicioController::class,"sobre_nos"]);
+	$route->get("/ProdutosParaCaes", [produtoController::class,"listar_produtos_caes"]);
+	$route->get("/ProdutosParaGatos", [produtoController::class,"listar_produtos_gatos"]);
 	//$route->post("/inserir", [RevisaoController::class,"cadastrar_carro"]);
 	//$route->get("/listar", [RevisaoController::class,"listar_carros_proprietarios"]);
 

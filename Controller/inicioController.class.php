@@ -7,8 +7,11 @@
 
 		public function inicio()
 		{
-			echo "inicio controller";
 			require_once "../index.php";
+		}
+
+		public function sobre_nos(){
+			require_once "Views/sobrenos.php";
 		}
 
 	}

@@ -1,26 +1,44 @@
-/* style.css */
-
 /* --- Navbar Principal (Topo) --- */
 .navbar-brand img.navbar-logo-img {
-    height: 80pt; /* Altura da logo para combinar com a imagem */
+    height: 80pt;
     margin-right: 10px; /* Espaçamento entre a logo e o texto */
 }
 
-/* Alinhamento da barra de pesquisa */
+/* Alinhamento central da barra de pesquisa */
 .navbar-search-form {
     flex-grow: 1;
     max-width: 500px;
 }
 
 /* Estilo para os ícones e links de ação à direita */
+
 .navbar-actions .nav-link {
     display: flex;
     align-items: center; /* Alinha ícone e texto verticalmente */
     padding: .5rem .75rem; /* Ajuste o padding para os links de ícone */
-    color: #212529; /* Cor do texto/ícone (preto mais escuro, Bootstrap default text-dark) */
+    color: #212529;
     text-decoration: none;
-    font-size: 0.95rem; /* Tamanho da fonte para o texto */
+    font-size: 0.95rem;
     transition: color 0.3s ease; /* Adicionado para uma transição suave no hover */
+}
+
+.nav-link text-nowrap:hover{
+    color: blue;
+    background-color: black;
+}
+
+/*Tirando sublinhado de link */
+.mapnav{
+    text-decoration: none;
+    color: inherit; 
+}
+
+.rounded{
+    padding-top: 20pt;
+}
+
+.fs-5{
+    padding-top: 30pt;
 }
 
 .navbar-actions .nav-link:hover {
@@ -47,6 +65,7 @@
 
 .navbar-categories .navbar-nav .nav-item {
     margin: 0 10px; /* Espaçamento entre os itens da lista de categorias */
+    font-size: 16pt;
 }
 
 .navbar-categories .nav-link {

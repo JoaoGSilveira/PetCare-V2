@@ -19,27 +19,28 @@
             <p class="wherelocal">inicio</p>
         </div>
 
-        <h2 class="titlecategoria mt-5 mb-4">Todos os Produtos:</h2>
+        <h2 class="titlecategoria mt-5 mb-4">Produtos para Gatos:</h2>
         
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
             <?php
             
-            foreach ($retorno_produtos as $produto) {
-                ?>
-                <div class="col">
-                    <div class="card h-100 product-card"> <img src='Foto_Produtos/<?php echo htmlspecialchars($produto->imagem); ?>' class="card-img-top product-img" alt='Imagem do Produto'>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title product-title"><?php echo htmlspecialchars($produto->nome); ?></h5>
-                            <p class="card-text product-price">R$ <?php echo htmlspecialchars(number_format($produto->preco, 2, ',', '.')); ?></p>
-                            <div class="mt-auto"> <button class="btn btn-primary w-100 add-to-cart-btn">
-                                    Adicionar ao Carrinho <i class="bi bi-cart-plus"></i> 
-                                </button>
+                foreach ($produtos_gatos as $produto) {
+                    ?>
+                    <div class="col">
+                        <div class="card h-100 product-card"> <img src='Foto_Produtos/<?php echo htmlspecialchars($produto->imagem); ?>' class="card-img-top product-img" alt='Imagem do Produto'>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title product-title"><?php echo htmlspecialchars($produto->nome); ?></h5>
+                                <p class="card-text product-price">R$ <?php echo htmlspecialchars(number_format($produto->preco, 2, ',', '.')); ?></p>
+                                <div class="mt-auto"> <button class="btn btn-primary w-100 add-to-cart-btn">
+                                        Adicionar ao Carrinho <i class="bi bi-cart-plus"></i> 
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <?php
-            }
+                    <?php
+                }
+
             ?>
         </div>
     </main>
