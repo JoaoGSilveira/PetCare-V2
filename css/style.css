@@ -1,0 +1,148 @@
+/* style.css */
+
+/* --- Navbar Principal (Topo) --- */
+.navbar-brand img.navbar-logo-img {
+    height: 80pt; /* Altura da logo para combinar com a imagem */
+    margin-right: 10px; /* Espaçamento entre a logo e o texto */
+}
+
+/* Alinhamento da barra de pesquisa */
+.navbar-search-form {
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+/* Estilo para os ícones e links de ação à direita */
+.navbar-actions .nav-link {
+    display: flex;
+    align-items: center; /* Alinha ícone e texto verticalmente */
+    padding: .5rem .75rem; /* Ajuste o padding para os links de ícone */
+    color: #212529; /* Cor do texto/ícone (preto mais escuro, Bootstrap default text-dark) */
+    text-decoration: none;
+    font-size: 0.95rem; /* Tamanho da fonte para o texto */
+    transition: color 0.3s ease; /* Adicionado para uma transição suave no hover */
+}
+
+.navbar-actions .nav-link:hover {
+    color: #000000; /* Cor ao passar o mouse (preto puro) */
+}
+
+.navbar-actions .nav-link i {
+    font-size: 1.5rem; /* Tamanho dos ícones (coração, carrinho, pessoa) */
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Ajuste específico para o texto "Entrar ou Cadastrar-se" */
+.navbar-actions .nav-link.text-nowrap {
+    white-space: nowrap; /* Impede a quebra de linha */
+    line-height: 1.2;
+}
+
+/* --- Segundo Navbar (Categorias) --- */
+.navbar-categories {
+    background-color: #212529; /* Fundo escuro */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-categories .navbar-nav .nav-item {
+    margin: 0 10px; /* Espaçamento entre os itens da lista de categorias */
+}
+
+.navbar-categories .nav-link {
+    color: rgba(255, 255, 255, 0.85); /* Cor do texto dos links de categoria (claro) */
+    padding: 1rem 1.5rem; /* Aumenta o padding para os links de categoria */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-categories .nav-link:hover,
+.navbar-categories .nav-link.active {
+    color: #ffffff; /* Cor ao passar o mouse e para o link ativo */
+}
+
+/* --- Novos Estilos para o Conteúdo Principal e Produtos --- */
+
+/* Estilos para o mapa do site */
+.mapasite {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #6c757d; /* Cor cinza para o texto */
+}
+
+.mapasite p {
+    display: inline; /* Para que "Onde estou?" e "inicio" fiquem na mesma linha */
+    margin-right: 5px;
+}
+
+.mapasite .wherelocal {
+    font-weight: bold;
+    color: #000; /* Preto para o local atual */
+}
+
+/* Estilo para o título de categoria */
+.titlecategoria {
+    font-size: 2rem;
+    color: #343a40; /* Cor escura para o título */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    text-align: left; /* Adicione ou certifique-se de que esta linha esteja presente */
+}
+
+/* Estilos para os Cards de Produto */
+.product-card {
+    border: 1px solid #dee2e6; /* Borda leve */
+    border-radius: .5rem; /* Bordas arredondadas */
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); /* Sombra suave */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efeito de levantar no hover */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); /* Sombra mais forte no hover */
+}
+
+.product-img {
+    max-width: 100%;
+    height: 200px; /* Altura fixa para a imagem */
+    object-fit: contain; /* Ajusta a imagem sem cortá-la */
+    padding: 15px; /* Espaçamento interno na imagem */
+    border-bottom: 1px solid #dee2e6;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #343a40;
+    text-align: center; /* Centraliza o nome do produto */
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff; /* Cor azul para o preço */
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o preço */
+}
+
+.add-to-cart-btn {
+    background-color: #28a745; /* Verde para o botão de adicionar */
+    border-color: #28a745;
+    color: #fff;
+    font-weight: 500;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Estilos para o footer */
+.footer {
+    background-color: #343a40; /* Cor de fundo escura */
+    color: white; /* Texto branco */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    width: 100%;
+}
