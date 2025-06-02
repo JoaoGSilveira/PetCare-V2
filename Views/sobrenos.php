@@ -20,14 +20,12 @@
             <p class="wherelocal">Sobre Nós</p>
         </div>
 
-        <h1 class="text-center">Sobre Nós</h1>
-
         <div class="text-center">
-            <img src="Images/sobrenos.jpg" class="rounded" alt="..." height="200pt">
+            <img src="Images/sobrenos.png" class="my-content-card" alt="..." height="200pt">
         </div>
 
         <div class="text-break">
-            <p class="fs-5">
+            <p class="fs-5 section-title-padding">
                 <h5 class="text-center">PetCare: Inovação e Amor a Serviço do Seu Melhor Amigo</h5>
                 <br>
                 Há mais de 5 anos, o PetCare nasceu da união de três amigos que compartilhavam um sonho: revolucionar o

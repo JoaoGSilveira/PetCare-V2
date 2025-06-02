@@ -1,6 +1,10 @@
+.navbar-logo-img{
+    border-radius: 100%;
+}
+
 /* --- Navbar Principal (Topo) --- */
 .navbar-brand img.navbar-logo-img {
-    height: 80pt;
+    height: 50pt;
     margin-right: 10px; /* Espaçamento entre a logo e o texto */
 }
 
@@ -22,9 +26,19 @@
     transition: color 0.3s ease; /* Adicionado para uma transição suave no hover */
 }
 
-.nav-link text-nowrap:hover{
+/*Carousel de imagens do index*/
+
+.carousel-images{
+    border-radius: 20pt;
+    border: 2pt solid black;
+    height: 300pt;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.navbar-actions .nav-link.text-nowrap:hover {
     color: blue;
-    background-color: black;
 }
 
 /*Tirando sublinhado de link */
@@ -33,11 +47,12 @@
     color: inherit; 
 }
 
-.rounded{
-    padding-top: 20pt;
+.my-content-card{
+    margin-top: 20pt;
+    border-radius: 20px;
 }
 
-.fs-5{
+.section-title-padding {
     padding-top: 30pt;
 }
 
@@ -164,4 +179,72 @@
     padding: 20px 0; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
     width: 100%;
+}
+
+.Espacamento{
+    margin-top: 5%;
+}
+
+.corpo-entrar{
+    background-color: #d3d4d4;
+}
+
+.login-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px; /* Largura máxima para o cartão de login */
+        }
+.create-account-section {
+    padding: 30px;
+    text-align: center;
+    max-width: 500px; /* Largura máxima para a seção de criar conta */
+}
+.create-account-section h2 {
+    color: #0000ff; /* Cor azul similar à imagem */
+    font-size: 1.8rem; /* Tamanho da fonte */
+    margin-bottom: 20px;
+}
+.create-account-section p {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.btn-primary-custom {
+    background-color: #6c757d; /* Cor azul do botão */
+    border-color: black;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    width: 100%; /* Largura total do botão */
+}
+
+.btn-primary-custom:hover {
+    background-color: white; /* Escurecer no hover */
+    border-color: black;
+}
+.btn-outline-secondary-custom {
+    border-color: #6c757d;
+    color: #6c757d;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    width: 100%; /* Largura total do botão */
+}
+.btn-outline-secondary-custom:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .login-card, .create-account-section {
+        max-width: 90%; /* Ajusta a largura para telas menores */
+        margin-bottom: 20px; /* Adiciona espaço entre as seções em telas menores */
+    }
+    .create-account-section h2 {
+        font-size: 1.5rem;
+    }
+    .create-account-section p {
+        font-size: 1rem;
+    }
 }

@@ -5,7 +5,7 @@ echo "
 <nav class='navbar navbar-expand-lg bg-body-tertiary navbar-light py-3'>
             <div class='container-fluid'>
                 <a class='navbar-brand d-flex align-items-center' href='/petcare/'>
-                    <img class='navbar-logo-img' src='icon/CachorroCasinha.png' alt='Logo PetCare'>
+                    <img class='navbar-logo-img' src='Images/Logo.png' alt='Logo PetCare'>
                     <h1>PetCare</h1>
                 </a>
 
@@ -36,7 +36,7 @@ echo "
                             </a>
                         </li>
                         <li class='nav-item'>
-                            <a class='nav-link text-nowrap' href='#'>
+                            <a class='nav-link text-nowrap' href='/petcare/Entrar'>
                                 <i class='bi bi-person'></i> Entrar ou <br>Cadastrar-se
                             </a>
                         </li>
