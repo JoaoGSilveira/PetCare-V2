@@ -30,7 +30,7 @@
 
 .carousel-images{
     border-radius: 20pt;
-    border: 2pt solid black;
+    border: 1pt solid black;
     height: 300pt;
     width: 100%;
     object-fit: cover;
