@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCare | Sobre Nós</title>
     <?php require_once "Models/Dependencias.php"; ?>
+    <link rel='stylesheet' href='css/produtos.css'>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <div class="mapasite">
             <p>Onde estou?</p>
             <br>
-            <p><a class="mapnav" href="/petcare/">inicio -></a></p>
+            <p><a class="mapnav" href="/petcare/">Início -></a></p>
             <p class="wherelocal">Sobre Nós</p>
         </div>
 

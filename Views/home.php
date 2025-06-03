@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>PetCare | Início</title>
     <?php require_once "Models/Dependencias.php";?>
+    <link rel='stylesheet' href='css/produtos.css'>
 </head>
 <body>
 

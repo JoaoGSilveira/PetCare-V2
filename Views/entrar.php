@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCare | Login</title>
     <?php require_once "Models/Dependencias.php";?>
+    <link rel='stylesheet' href='css/entraroucadastrar.css'>
 </head>
 <body class="corpo-entrar">
     <?php require_once "navbar.php";?>

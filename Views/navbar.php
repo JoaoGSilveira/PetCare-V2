@@ -1,7 +1,9 @@
 <?php
-
+ 
+ require_once "Models/Dependencias.php";
 // Menu principal contendo barra de pesquisa, cadastro, favoritos e carrinho de compra.
 echo "
+<link rel='stylesheet' href='css/navbar.css'>
 <nav class='navbar navbar-expand-lg bg-body-tertiary navbar-light py-3'>
             <div class='container-fluid'>
                 <a class='navbar-brand d-flex align-items-center' href='/petcare/'>

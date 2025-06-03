@@ -1,0 +1,100 @@
+/*Carousel de imagens do index*/
+.carousel-images{
+    border-radius: 20pt;
+    border: 1pt solid black;
+    height: 300pt; /* A linha deve terminar aqui */
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Tirando sublinhado de link */
+.mapnav{
+    text-decoration: none;
+    color: inherit; 
+}
+
+.my-content-card{
+    margin-top: 20pt;
+    border-radius: 20px;
+}
+
+.section-title-padding {
+    padding-top: 30pt;
+}
+
+/* --- Novos Estilos para o Conteúdo Principal e Produtos --- */
+
+/* Estilos para o mapa do site */
+.mapasite {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #6c757d; /* Cor cinza para o texto */
+}
+
+.mapasite p {
+    display: inline; /* Para que "Onde estou?" e "inicio" fiquem na mesma linha */
+    margin-right: 5px;
+}
+
+.mapasite .wherelocal {
+    font-weight: bold;
+    color: #000; /* Preto para o local atual */
+}
+
+/* Estilo para o título de categoria */
+.titlecategoria {
+    font-size: 2rem;
+    color: #343a40; /* Cor escura para o título */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    text-align: left; /* Adicione ou certifique-se de que esta linha esteja presente */
+}
+
+/* Estilos para os Cards de Produto */
+.product-card {
+    border: 1px solid #dee2e6; /* Borda leve */
+    border-radius: .5rem; /* Bordas arredondadas */
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); /* Sombra suave */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efeito de levantar no hover */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); /* Sombra mais forte no hover */
+}
+
+.product-img {
+    max-width: 100%;
+    height: 200px; /* Altura fixa para a imagem */
+    object-fit: contain; /* Ajusta a imagem sem cortá-la */
+    padding: 15px; /* Espaçamento interno na imagem */
+    border-bottom: 1px solid #dee2e6;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #343a40;
+    text-align: center; /* Centraliza o nome do produto */
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff; /* Cor azul para o preço */
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o preço */
+}
+
+.add-to-cart-btn {
+    background-color: #28a745; /* Verde para o botão de adicionar */
+    border-color: #28a745;
+    color: #fff;
+    font-weight: 500;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
