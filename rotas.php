@@ -38,11 +38,11 @@
 	$route->get("/ProdutosParaCaes", [produtoController::class,"listar_produtos_caes"]);
 	$route->get("/ProdutosParaGatos", [produtoController::class,"listar_produtos_gatos"]);
 	$route->get("/Entrar", [clienteController::class,"login"]);
-	//$route->post("/Entrar", [clienteController::class,"login"]);
-	//$route->post("/inserir", [RevisaoController::class,"cadastrar_carro"]);
-	//$route->get("/listar", [RevisaoController::class,"listar_carros_proprietarios"]);
-
-	//Gráfico
-	//$route->get("/grafico", [RevisaoController::class,"grafico"]);
-	//$route->get("/dadosgrafico", [RevisaoController::class,"dadosgrafico"]);
+	$route->post("/Entrar", [clienteController::class,"login"]);
+	$route->get("/Sair", [clienteController::class,"logout"]); 
+	$route->get("/carrinho", [CarrinhoController::class, "index"]); // Página do carrinho
+    $route->post("/carrinho/adicionar", [CarrinhoController::class, "adicionar"]); // Adicionar item
+    $route->post("/carrinho/remover", [CarrinhoController::class, "remover"]); // Remover item
+    $route->post("/carrinho/atualizar", [CarrinhoController::class, "atualizarQuantidade"]); // Atualizar quantidade
+    $route->post("/carrinho/limpar", [CarrinhoController::class, "limpar"]); // Limpar carrinho
 ?>

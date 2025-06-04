@@ -1,0 +1,110 @@
+/* Estilos customizados para a página Sobre Nós */
+.hero-section {
+    position: relative;
+    height: 300px; /* Altura ajustável do banner */
+    background-color: #f8f9fa; /* Cor de fundo caso a imagem não carregue */
+    overflow: hidden; /* Garante que a imagem não transborde */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço sem distorcer */
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.8); /* Escurece um pouco a imagem para o texto se destacar */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10; /* Acima da imagem */
+    color: white; /* Cor do texto sobre a imagem */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para o texto */
+}
+        
+/* Ajuste do breadcrumb */
+.breadcrumb-custom {
+    background-color: #f8f9fa; /* Levemente cinza */
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.95em;
+    margin-bottom: 2rem; /* Espaçamento abaixo */
+}
+.breadcrumb-custom .breadcrumb-item + .breadcrumb-item::before {
+    content: "»"; /* Altera o separador para uma seta */
+    color: #6c757d;
+}
+.breadcrumb-custom a {
+    color: #007bff; /* Cor padrão do link do Bootstrap */
+    text-decoration: none;
+}
+.breadcrumb-custom a:hover {
+    text-decoration: underline;
+}
+.breadcrumb-custom .active {
+    color: #6c757d; /* Cor para o item ativo */
+    font-weight: 500;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); /* Sombra suave */
+    margin-bottom: 3rem;
+}
+
+.about-section h2 {
+    color: #28a745; /* Verde Bootstrap */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    line-height: 1.8;
+    color: #495057; /* Texto cinza escuro */
+    font-size: 1.05em;
+}
+
+/* Estilo para a seção de destaque */
+.highlight-box {
+    background-color: #e6f7ee; /* Fundo verde muito claro */
+    border-left: 5px solid #28a745; /* Borda verde */
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.highlight-box p {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #218838; /* Texto verde */
+}
+
+.mapasite {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #6c757d; /* Cor cinza para o texto */
+}
+
+.mapasite p {
+    display: inline; /* Para que "Onde estou?" e "inicio" fiquem na mesma linha */
+    margin-right: 5px;
+}
+
+.mapasite .wherelocal {
+    font-weight: bold;
+    color: #000; /* Preto para o local atual */
+}
+
+.mapnav{
+    text-decoration: none;
+    color: inherit; 
+}
+
+.imgsn{
+    border-radius: 10px;
+}

@@ -1,7 +1,6 @@
 /*Carousel de imagens do index*/
 .carousel-images{
     border-radius: 20pt;
-    border: 1pt solid black;
     height: 300pt; /* A linha deve terminar aqui */
     width: 100%;
     object-fit: cover;

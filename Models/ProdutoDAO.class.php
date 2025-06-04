@@ -75,20 +75,21 @@
             $resultado = $stm->fetch(PDO::FETCH_ASSOC);
     
             if ($resultado) {
-                $marcaDAO = new MarcaDAO();
-                $categoriaDAO = new CategoriaDAO();
+
+                $marcaDAO = new MarcaDAO($this->db);
+                $categoriaDAO = new CategoriaDAO($this->db);
     
                 $produto = new Produto(
-                    $resultado['id_produto'],
-                    $resultado['nome'],
-                    $resultado['descritivo'],
-                    $resultado['preco'],
-                    $resultado['estoque'],
-                    $resultado['imagem'],
-                    $resultado['animal'],
-                    $resultado['status_produto'],
-                    $marcaDAO->buscarPorId($resultado['id_marca']),
-                    $categoriaDAO->buscarPorId($resultado['id_categoria'])
+                    idproduto: $resultado['id_produto'],
+                    nome: $resultado['nome'],
+                    descricao: $resultado['descritivo'],
+                    preco: $resultado['preco'],
+                    estoque: $resultado['estoque'],
+                    imagem: $resultado['imagem'],
+                    animal: $resultado['animal'],
+                    status: $resultado['status_produto'],
+                    marca: $marcaDAO->buscarPorId($resultado['id_marca']), 
+                    categoria_produto: $categoriaDAO->buscarPorId($resultado['id_categoria'])
                 );
     
                 return $produto;
